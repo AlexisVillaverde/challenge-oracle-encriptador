@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Madimi+One&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header id="encabezado">
+            <img id="logo-alura" src="img/Top.png" alt="Logo alura">
+            <h1>Encriptador de texto</h1>
+        </header>
+        <main class="principal">
+                <div class="contenedor-textos">
+                    <div class="contenedor1">
+                        <textarea id="texto-usuario" cols="auto" rows="10" placeholder="Introduce el texto aquí"></textarea>
+                        <p>&#9888; Solo letras minúsculas y sin acentos</p>
+                        <div class="botones">
+                            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                            <button class="btn-desencriptar" onclick="btnDesencriptar();">Desencriptar</button>
+                        </div>
+                    </div>
+                    <div class="mensajes-resultado">
+                        <div id="mensajes-iniciales">
+                            <img src="img/Muñeco.png" alt="">
+                            <h2>Ningún mensaje fue encontrado</h2>
+                        </div>
+                        <div id="resultado">
+                            <textarea id="campo-resultado" cols="auto" rows="10" placeholder readonly></textarea>
+                            <button id="btn-copy" onclick="copiarAlPortapapeles()">Copiar</button> 
+                        </div>
+                    </div>
+                    
+                </div>
+        </main>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweet-alert.js"></script>
+    </body>
+
+    <footer>
+        <p>&copy Made by Francisco Alexis Villaverde García</p>
+        <a href="https://github.com/AlexisVillaverde"><img class="img-footer" src="img/github-mark-white.png" alt="logo-github"></a>
+        <a href="https://www.linkedin.com/in/francisco-alexis-villaverde-garc%C3%ADa-639915263/"><img class="img-footer" src="img/LI-In-Bug.png" alt="logo-linkedin"></a>
+        
+    </footer>
+</html>
