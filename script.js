@@ -108,4 +108,7 @@ function mostrarElementos() {
 //Función para copiar los resultados
 function copiarAlPortapapeles(){
     navigator.clipboard.writeText(campo_resultado.value);
+    swal.fire({
+        title:"El texto fue copiado exitosamente😎"
+    });
 } 
